@@ -17,7 +17,7 @@ public class SearchTestCases extends BaseUITestCase {
         super.beforeMethod();
         driver.get(MAIN_PAGE_URL);
 
-        componentOne = PageFactory.initElements(driver, ComponentOne.class);
+        componentOne = new ComponentOne(driver);
     }
 
     @Test
